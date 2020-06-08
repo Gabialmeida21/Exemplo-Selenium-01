@@ -1,0 +1,44 @@
+// 1 - Pacote
+package siteIterasys;
+
+
+
+//2 - Bibliotecas
+
+
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import org.openqa.selenium.WebDriver;
+
+
+
+// 3 - Classe
+public class Cursos {
+	// 3.1 Atributos / Característica
+	String url;     // endereço do site alvo
+	WebDriver driver;   // objeto do Selenium WebDriver
+	
+	
+	
+	// 3.2 Métodos ou Funções
+	@Before
+	public void iniciar() {
+		url = "https://www.iterasys.com.br";
+		
+	}
+	
+	
+	@After
+	public void finalizar() {
+		
+	}
+	
+	@Test
+	public void consultarCurso() {
+		
+	}
+
+}

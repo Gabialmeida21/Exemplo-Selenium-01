@@ -1,0 +1,19 @@
+// 1 - Pacote
+package siteIterasys;
+
+//2 - Bibliotecas
+import org.openqa.selenium.WebDriver;
+
+
+
+// 3 - Classe
+public class Cursos {
+	// 3.1 Atributos / Característica
+	String url;
+	WebDriver driver;
+	
+	
+	
+	// 3.2 Métodos ou Funções
+
+}

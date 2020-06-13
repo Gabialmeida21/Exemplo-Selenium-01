@@ -1,10 +1,7 @@
 // 1 - Pacote
 package siteIterasys;
 
-
-
 import static org.junit.Assert.assertEquals;
-
 import java.util.concurrent.TimeUnit;
 
 //2 - Bibliotecas
@@ -16,15 +13,11 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-
-
 // 3 - Classe
 public class Cursos {
 	// 3.1 Atributos / Caracter�stica
 	String url;     // endere�o do site alvo
 	WebDriver driver;   // objeto do Selenium WebDriver
-	
-	
 	
 	// 3.2 M�todos ou Fun��es
 	@Before
@@ -35,7 +28,6 @@ public class Cursos {
 		driver.manage().timeouts().implicitlyWait(60000, TimeUnit.MILLISECONDS);
 		driver.manage().window().maximize();
 	}
-	
 	
 	@After
 	public void finalizar() {
@@ -61,9 +53,6 @@ public class Cursos {
 		
 		//assertEquals(resultadoEsperado, resultadoAtual)
 		assertEquals(titulo, driver.findElement(By.cssSelector("span.item-title")).getText());
-		assertEquals(preco, driver.findElement(By.cssSelector("span.new-price")).getText());
-		
-		
+		assertEquals(preco, driver.findElement(By.cssSelector("span.new-price")).getText());	
 	}
-
 }

@@ -19,7 +19,7 @@ public class Cursos {
 	String url;     // endere�o do site alvo
 	WebDriver driver;   // objeto do Selenium WebDriver
 	
-	// 3.2 M�todos ou Fun��es
+	// 3.2 Métodos e funções
 	@Before
 	public void iniciar() {
 		url = "https://www.iterasys.com.br";

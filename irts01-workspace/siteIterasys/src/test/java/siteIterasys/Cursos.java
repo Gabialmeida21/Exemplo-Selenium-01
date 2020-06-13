@@ -8,9 +8,6 @@ import static org.junit.Assert.assertEquals;
 import java.util.concurrent.TimeUnit;
 
 //2 - Bibliotecas
-
-
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -23,13 +20,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 // 3 - Classe
 public class Cursos {
-	// 3.1 Atributos / Característica
-	String url;     // endereço do site alvo
+	// 3.1 Atributos / Caracterï¿½stica
+	String url;     // endereï¿½o do site alvo
 	WebDriver driver;   // objeto do Selenium WebDriver
 	
 	
 	
-	// 3.2 Métodos ou Funções
+	// 3.2 Mï¿½todos ou Funï¿½ï¿½es
 	@Before
 	public void iniciar() {
 		url = "https://www.iterasys.com.br";
@@ -47,17 +44,17 @@ public class Cursos {
 	
 	@Test
 	public void consultarCurso() {
-		// Home - Página Inicial
-		driver.get(url);      // Abrir o navegador na página indicada na url
+		// Home - Pï¿½gina Inicial
+		driver.get(url);      // Abrir o navegador na pï¿½gina indicada na url
 		driver.findElement(By.id("searchtext")).clear();
 		driver.findElement(By.id("searchtext")).sendKeys(Keys.chord("Mantis"));
 		// Tirar o screenshot
 		driver.findElement(By.id("searchtext")).sendKeys(Keys.ENTER);
 		
-		// Página que lista os cursos
+		// Pï¿½gina que lista os cursos
 		driver.findElement(By.cssSelector("span.comprar")).click();
 		
-		//Página do Carrinho de Compra
+		//Pï¿½gina do Carrinho de Compra
 		// Resultados Esperados
 		String titulo = "Mantis";
 		String preco = "R$ 49,99";
